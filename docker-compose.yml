@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  gray_scaling:
+    build: ./opencv
+    volumes:
+     - ./opencv:/usr/src/app
+    ports:
+     - 8001:8001
